@@ -1,0 +1,17 @@
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\bin\Release\netstandard2.0\PinUp.DAL.deps.json
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\bin\Release\netstandard2.0\PinUp.DAL.dll
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\bin\Release\netstandard2.0\PinUp.DAL.pdb
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.csprojResolveAssemblyReference.cache
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.csproj.CoreCompileInputs.cache
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.AssemblyInfoInputs.cache
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.AssemblyInfo.cs
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.dll
+E:\Projects\NetCoreAPI - Angular 5\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.pdb
+E:\Projects\PinUp\PinUp.DAL\bin\Release\netstandard2.0\PinUp.DAL.deps.json
+E:\Projects\PinUp\PinUp.DAL\bin\Release\netstandard2.0\PinUp.DAL.dll
+E:\Projects\PinUp\PinUp.DAL\bin\Release\netstandard2.0\PinUp.DAL.pdb
+E:\Projects\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.csproj.CoreCompileInputs.cache
+E:\Projects\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.AssemblyInfoInputs.cache
+E:\Projects\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.AssemblyInfo.cs
+E:\Projects\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.dll
+E:\Projects\PinUp\PinUp.DAL\obj\Release\netstandard2.0\PinUp.DAL.pdb

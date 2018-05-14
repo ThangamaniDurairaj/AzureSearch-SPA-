@@ -1,0 +1,8 @@
+H:\Azure Search\Azure Search\AzureSearch.DAL\obj\Release\netstandard2.0\AzureSearch.DAL.csproj.CoreCompileInputs.cache
+H:\Azure Search\Azure Search\AzureSearch.DAL\obj\Release\netstandard2.0\AzureSearch.DAL.AssemblyInfoInputs.cache
+H:\Azure Search\Azure Search\AzureSearch.DAL\obj\Release\netstandard2.0\AzureSearch.DAL.AssemblyInfo.cs
+H:\Azure Search\Azure Search\AzureSearch.DAL\bin\Release\netstandard2.0\AzureSearch.DAL.deps.json
+H:\Azure Search\Azure Search\AzureSearch.DAL\bin\Release\netstandard2.0\AzureSearch.DAL.dll
+H:\Azure Search\Azure Search\AzureSearch.DAL\bin\Release\netstandard2.0\AzureSearch.DAL.pdb
+H:\Azure Search\Azure Search\AzureSearch.DAL\obj\Release\netstandard2.0\AzureSearch.DAL.dll
+H:\Azure Search\Azure Search\AzureSearch.DAL\obj\Release\netstandard2.0\AzureSearch.DAL.pdb

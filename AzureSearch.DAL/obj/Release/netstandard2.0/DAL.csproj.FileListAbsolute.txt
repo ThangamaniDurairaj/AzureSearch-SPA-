@@ -1,0 +1,18 @@
+C:\Users\ADMIN\source\DAL\bin\Release\netstandard2.0\DAL.deps.json
+C:\Users\ADMIN\source\DAL\bin\Release\netstandard2.0\DAL.dll
+C:\Users\ADMIN\source\DAL\bin\Release\netstandard2.0\DAL.pdb
+C:\Users\ADMIN\source\DAL\obj\Release\netstandard2.0\DAL.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\source\DAL\obj\Release\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\DAL\obj\Release\netstandard2.0\DAL.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\DAL\obj\Release\netstandard2.0\DAL.AssemblyInfo.cs
+C:\Users\ADMIN\source\DAL\obj\Release\netstandard2.0\DAL.dll
+C:\Users\ADMIN\source\DAL\obj\Release\netstandard2.0\DAL.pdb
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\bin\Release\netstandard2.0\DAL.deps.json
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\bin\Release\netstandard2.0\DAL.dll
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\bin\Release\netstandard2.0\DAL.pdb
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\obj\Release\netstandard2.0\DAL.csprojResolveAssemblyReference.cache
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\obj\Release\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\obj\Release\netstandard2.0\DAL.AssemblyInfoInputs.cache
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\obj\Release\netstandard2.0\DAL.AssemblyInfo.cs
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\obj\Release\netstandard2.0\DAL.dll
+E:\Projects\NetCoreAPI - Angular 5\UserRegApp\DAL\obj\Release\netstandard2.0\DAL.pdb
