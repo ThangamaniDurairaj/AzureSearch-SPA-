@@ -1,0 +1,14 @@
+H:\Azure Search\Azure Search\AzureSearch.UI\bin\Debug\netcoreapp2.0\AzureSearch.UI.deps.json
+H:\Azure Search\Azure Search\AzureSearch.UI\bin\Debug\netcoreapp2.0\AzureSearch.UI.runtimeconfig.json
+H:\Azure Search\Azure Search\AzureSearch.UI\bin\Debug\netcoreapp2.0\AzureSearch.UI.runtimeconfig.dev.json
+H:\Azure Search\Azure Search\AzureSearch.UI\bin\Debug\netcoreapp2.0\AzureSearch.UI.dll
+H:\Azure Search\Azure Search\AzureSearch.UI\bin\Debug\netcoreapp2.0\AzureSearch.UI.pdb
+H:\Azure Search\Azure Search\AzureSearch.UI\bin\Debug\netcoreapp2.0\AzureSearch.DAL.dll
+H:\Azure Search\Azure Search\AzureSearch.UI\bin\Debug\netcoreapp2.0\AzureSearch.DAL.pdb
+H:\Azure Search\Azure Search\AzureSearch.UI\obj\Debug\netcoreapp2.0\AzureSearch.UI.csprojAssemblyReference.cache
+H:\Azure Search\Azure Search\AzureSearch.UI\obj\Debug\netcoreapp2.0\AzureSearch.UI.csproj.CoreCompileInputs.cache
+H:\Azure Search\Azure Search\AzureSearch.UI\obj\Debug\netcoreapp2.0\AzureSearch.UI.AssemblyInfoInputs.cache
+H:\Azure Search\Azure Search\AzureSearch.UI\obj\Debug\netcoreapp2.0\AzureSearch.UI.AssemblyInfo.cs
+H:\Azure Search\Azure Search\AzureSearch.UI\obj\Debug\netcoreapp2.0\AzureSearch.UI.csproj.CopyComplete
+H:\Azure Search\Azure Search\AzureSearch.UI\obj\Debug\netcoreapp2.0\AzureSearch.UI.dll
+H:\Azure Search\Azure Search\AzureSearch.UI\obj\Debug\netcoreapp2.0\AzureSearch.UI.pdb

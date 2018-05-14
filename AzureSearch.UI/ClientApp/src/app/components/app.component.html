@@ -1,0 +1,78 @@
+<div id="app_container">
+    <div class="flex-container">
+
+        <mat-toolbar class="app-toolbar mat-toolbar mat-primary mat-toolbar-single-row" color="primary">
+           
+            <button *ngIf="isUserLoggedIn" mat-icon-button="" class="mat-icon-button" (click)="homenav.toggle()">
+                <span class="mat-button-wrapper">
+                    <mat-icon class="mat-icon material-icons" role="img" aria-hidden="true">menu</mat-icon>
+                </span>
+                <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+                <div class="mat-button-focus-overlay"></div>
+            </button>
+            
+            <mat-toolbar>Azure Search -OpenID Connet, ASP.NET MVC/API/EF Core Angular5,Material2,TypeScript</mat-toolbar>
+
+            <mat-menu #appMenu="matMenu">
+                <button mat-menu-item (click)="logout()">Logout</button>
+            </mat-menu>
+
+            <button *ngIf="isUserLoggedIn" mat-icon-button [matMenuTriggerFor]="appMenu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+
+            <mat-menu class="ng-tns-c5-0 ng-star-inserted"></mat-menu>
+
+        </mat-toolbar>
+       
+        <mat-sidenav-container class="app-sidenav-container mat-drawer-container mat-sidenav-container" style="margin-top: 0px; min-height:600px;">
+
+            <div class="mat-drawer-backdrop"></div>
+
+            <div tabindex="-1" class="cdk-visually-hidden cdk-focus-trap-anchor"></div>
+         
+                <mat-sidenav #homenav class="app-sidenav-nav mat-elevation-z6 mat-drawer mat-sidenav ng-tns-c7-1 ng-trigger ng-trigger-transform mat-drawer-side
+                ng-star-inserted" fixedtopgap="56" tabindex="-1" style="transform: translate3d(0px, 0px, 0px); visibility: visible; " mode="side" opened>
+                    <div *ngIf="isUserLoggedIn" >
+                        <mat-nav-list class="mat-nav-list ng-star-inserted" role="navigation" style="max-width:150px">
+                            <a class="mat-list-item" mat-list-item="" routerlink="" routerlinkactive="active" href="/">
+                                <div class="mat-list-item-content">
+                                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div>
+                                    <div class="mat-list-text"></div>
+                                    <mat-icon _ngcontent-c0="" class="mat-icon material-icons" role="img" aria-hidden="true">Home</mat-icon>Home
+                                </div>
+                            </a>
+                            <a class="mat-list-item ng-star-inserted" mat-list-item="" routerlink="/profile" routerlinkactive="active" href="/profile">
+                                <div class="mat-list-item-content">
+                                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div><div class="mat-list-text"></div>
+                                    <mat-icon _ngcontent-c0="" class="mat-icon material-icons" role="img" aria-hidden="true">Profile</mat-icon>Profile
+                                </div>
+                            </a>
+                            <a class="mat-list-item ng-star-inserted" mat-list-item="" routerlink="/source" routerlinkactive="active" href="/source">
+                                <div class="mat-list-item-content">
+                                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div><div class="mat-list-text"></div>
+                                    <mat-icon _ngcontent-c0="" class="mat-icon material-icons" role="img" aria-hidden="true">Source</mat-icon>Source
+                                </div>
+                            </a>
+                            <a class="mat-list-item ng-star-inserted" mat-list-item="" routerlink="/search" routerlinkactive="active" href="/search">
+                                <div class="mat-list-item-content">
+                                    <div class="mat-list-item-ripple mat-ripple" mat-ripple=""></div><div class="mat-list-text"></div>
+                                    <mat-icon _ngcontent-c0="" class="mat-icon material-icons" role="img" aria-hidden="true">Search</mat-icon>Search
+                                </div>
+                            </a>
+                        </mat-nav-list>
+                    </div>
+                </mat-sidenav>
+         
+                <div tabindex="-1" class="cdk-visually-hidden cdk-focus-trap-anchor"></div>
+
+            <mat-sidenav-content class="mat-drawer-content mat-sidenav-content" style="margin-left: 200px;margin-right: 0px;">
+                <div id="mainContent" class="app-component">
+                    <router-outlet></router-outlet>
+                </div>
+            </mat-sidenav-content>
+
+        </mat-sidenav-container>
+
+    </div>
+</div>

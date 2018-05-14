@@ -1,0 +1,821 @@
+2018-05-14T11:13:01.2117222+05:30  [INF] Starting @angular/cli on port 49458... (95911151)
+2018-05-14T11:13:01.3877323+05:30  [ERR] 'npm' is not recognized as an internal or external command,
+ (b128ddc8)
+2018-05-14T11:13:02.4497930+05:30  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=AzureSearch.UI " (9958f5bb)
+2018-05-14T11:13:03.0918297+05:30  [INF] Executed DbCommand ("184"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T11:13:03.1398325+05:30  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T11:13:03.2008360+05:30  [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-05-14T11:13:03.2208371+05:30  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-05-14T11:13:03.5578564+05:30  [INF] Executed DbCommand ("75"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-14T11:13:04.2698971+05:30 0HLDPBM7T6I12:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:4200/   (ca22a1cb)
+2018-05-14T11:13:04.2698971+05:30 0HLDPBM7T6I13:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:4200/  0 (ca22a1cb)
+2018-05-14T11:13:04.3559020+05:30 0HLDPBM7T6I13:00000001 [INF] Request finished in 118.6241ms 200  (791a596a)
+2018-05-14T11:13:05.2069507+05:30 0HLDPBM7T6I12:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: )) ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: ) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was:  ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.<WithTimeout>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.<PerformProxyRequest>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: ) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was:  ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+---> (Inner Exception #0) System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was:  ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()<---
+<---
+
+2018-05-14T11:13:05.4519647+05:30 0HLDPBM7T6I12:00000001 [INF] Request finished in 1197.2631ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-14T11:13:05.6429757+05:30 0HLDPBM7T6I13:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:4200/favicon.ico   (ca22a1cb)
+2018-05-14T11:13:05.7791774+05:30 0HLDPBM7T6I13:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: )) ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: ) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was:  ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.<WithTimeout>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.<PerformProxyRequest>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: ) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was:  ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+---> (Inner Exception #0) System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was:  ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()<---
+<---
+
+2018-05-14T11:13:05.8445777+05:30 0HLDPBM7T6I13:00000002 [INF] Request finished in 214.6474ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-14T11:29:07.2771566+05:30  [INF] Starting @angular/cli on port 50176... (63ae0b6c)
+2018-05-14T11:29:08.9222507+05:30  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=AzureSearch.UI " (9958f5bb)
+2018-05-14T11:29:09.8643046+05:30  [INF] Executed DbCommand ("198"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T11:29:09.9473093+05:30  [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T11:29:10.0213136+05:30  [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-05-14T11:29:10.0853172+05:30  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-05-14T11:29:10.6093472+05:30  [ERR] npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+ (d478f63d)
+2018-05-14T11:29:10.6493495+05:30  [ERR] npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+ (75dccc86)
+2018-05-14T11:29:10.6533497+05:30  [INF] Executed DbCommand ("158"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-14T11:29:11.3153876+05:30 0HLDPBV84TMP7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:4200/   (ca22a1cb)
+2018-05-14T11:29:11.3153876+05:30 0HLDPBV84TMP6:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:4200/  0 (ca22a1cb)
+2018-05-14T11:29:11.4303942+05:30 0HLDPBV84TMP6:00000001 [INF] Request finished in 169.8461ms 200  (791a596a)
+2018-05-14T11:29:12.3024441+05:30 0HLDPBV84TMP7:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+)) ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.<WithTimeout>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.<PerformProxyRequest>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+---> (Inner Exception #0) System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()<---
+<---
+
+2018-05-14T11:29:12.5654591+05:30 0HLDPBV84TMP7:00000001 [INF] Request finished in 1276.9696ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-14T11:29:12.8774769+05:30 0HLDPBV84TMP6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:4200/favicon.ico   (ca22a1cb)
+2018-05-14T11:29:13.0776780+05:30 0HLDPBV84TMP6:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+)) ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.<WithTimeout>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.<PerformProxyRequest>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+---> (Inner Exception #0) System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()<---
+<---
+
+2018-05-14T11:29:13.1868782+05:30 0HLDPBV84TMP6:00000002 [INF] Request finished in 322.9714ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-14T11:31:08.4167472+05:30  [INF] Starting @angular/cli on port 50207... (772d34e8)
+2018-05-14T11:31:09.6498178+05:30  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=AzureSearch.UI " (9958f5bb)
+2018-05-14T11:31:10.4308624+05:30  [INF] Executed DbCommand ("295"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T11:31:10.4758650+05:30  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T11:31:10.5458690+05:30  [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-05-14T11:31:10.5668702+05:30  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-05-14T11:31:11.0188961+05:30  [INF] Executed DbCommand ("128"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-14T11:31:11.0889001+05:30  [ERR] npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+ (d478f63d)
+2018-05-14T11:31:11.2369085+05:30  [ERR] npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+ (75dccc86)
+2018-05-14T11:31:11.2569097+05:30  [ERR] npm ERR! A complete log of this run can be found in:
+ (e9dc2fc2)
+2018-05-14T11:31:11.4649216+05:30 0HLDPC0BV7CJU:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:6000/  0 (ca22a1cb)
+2018-05-14T11:31:11.5219248+05:30 0HLDPC0BV7CJU:00000001 [INF] Request finished in 67.5391ms 200  (791a596a)
+2018-05-14T11:31:43.5777583+05:30  [INF] Starting @angular/cli on port 50226... (b3a9a91d)
+2018-05-14T11:31:45.1568487+05:30  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=AzureSearch.UI " (9958f5bb)
+2018-05-14T11:31:46.0478996+05:30  [INF] Executed DbCommand ("249"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T11:31:46.1099032+05:30  [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T11:31:46.1689065+05:30  [INF] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-05-14T11:31:46.1929079+05:30  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-05-14T11:31:46.6629348+05:30  [INF] Executed DbCommand ("140"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-14T11:31:46.7209381+05:30  [ERR] npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+ (d478f63d)
+2018-05-14T11:31:46.8139434+05:30  [ERR] npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+ (75dccc86)
+2018-05-14T11:31:46.8449452+05:30  [ERR] npm ERR! A complete log of this run can be found in:
+ (e9dc2fc2)
+2018-05-14T11:31:47.3879763+05:30 0HLDPC0ML94PI:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:62501/  0 (ca22a1cb)
+2018-05-14T11:31:47.3879763+05:30 0HLDPC0ML94PH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:62501/   (ca22a1cb)
+2018-05-14T11:31:47.4899821+05:30 0HLDPC0ML94PI:00000001 [INF] Request finished in 142.7575ms 200  (791a596a)
+2018-05-14T11:31:48.5010399+05:30 0HLDPC0ML94PH:00000001 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+)) ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.<WithTimeout>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.<PerformProxyRequest>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+---> (Inner Exception #0) System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()<---
+<---
+
+2018-05-14T11:31:48.8360591+05:30 0HLDPC0ML94PH:00000001 [INF] Request finished in 1403.8712ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-14T11:31:49.0500713+05:30 0HLDPC0ML94PI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:62501/favicon.ico   (ca22a1cb)
+2018-05-14T11:31:49.2980855+05:30 0HLDPC0ML94PI:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+)) ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.<WithTimeout>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.<PerformProxyRequest>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIIndexMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+---> (Inner Exception #0) System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! file H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+
+npm ERR! code EJSONPARSE
+npm ERR! Failed to parse json
+npm ERR! Unexpected token ] in JSON at position 2582 while parsing near '..."azure search",
+npm ERR!     ]
+npm ERR! }
+npm ERR! '
+npm ERR! File: H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp\package.json
+npm ERR! Failed to parse package.json data.
+npm ERR! package.json must be actual JSON, not just JavaScript.
+npm ERR! 
+npm ERR! Tell the package author to fix their package.json file. JSON.parse
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()<---
+<---
+
+2018-05-14T11:31:49.4250928+05:30 0HLDPC0ML94PI:00000002 [INF] Request finished in 365.2538ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-14T12:22:28.5413840+05:30  [INF] Starting @angular/cli on port 50294... (ae95a900)
+2018-05-14T12:22:30.0164683+05:30  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=AzureSearch.UI " (9958f5bb)
+2018-05-14T12:22:30.7325093+05:30  [INF] Executed DbCommand ("259"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T12:22:30.7925127+05:30  [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-05-14T12:22:30.8305149+05:30  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-05-14T12:22:30.8515161+05:30  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-05-14T12:22:31.4525505+05:30  [INF] Executed DbCommand ("297"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-14T12:22:32.0055821+05:30 0HLDPCT20TUMN:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:62501/  0 (ca22a1cb)
+2018-05-14T12:22:32.0055821+05:30 0HLDPCT20TUMM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:62501/   (ca22a1cb)
+2018-05-14T12:22:32.1205887+05:30 0HLDPCT20TUMN:00000001 [INF] Request finished in 138.7466ms 200  (791a596a)
+2018-05-14T12:22:50.3826332+05:30  [INF] > AzureSearch@1.0.0 start H:\Azure Search\Azure Search\AzureSearch.UI\ClientApp
+> ng serve --extract-css "--port" "50294"
+
+** NG Live Development Server is listening on localhost:50294, open your browser on http://localhost:50294/ **
+ (3a3af814)
+2018-05-14T12:23:10.5277855+05:30  [INF] webpack: wait until bundle finished: /
+ (4d787c36)
+2018-05-14T12:23:33.7021110+05:30  [INF] Date: 2018-05-14T06:53:33.635Z
+ (115aee97)
+2018-05-14T12:23:33.7061112+05:30  [INF] Hash: 795f338354a6ae259b9d
+Time: 43056ms
+chunk {inline} inline.bundle.js (inline) 3.85 kB [entry] [rendered]
+chunk {main} main.bundle.js (main) 387 kB [initial] [rendered]
+chunk {polyfills} polyfills.bundle.js (polyfills) 681 kB [initial] [rendered]
+chunk {styles} styles.bundle.css (styles) 59.7 kB [initial] [rendered]
+chunk {vendor} vendor.bundle.js (vendor) 16.5 MB [initial] [rendered]
+
+ (fc36c974)
+2018-05-14T12:23:34.1941391+05:30  [INF] WARNING in Circular dependency detected:
+src\app\services\auth.service.ts -> src\app\services\endpoint-factory.service.ts -> src\app\services\auth.service.ts
+
+WARNING in Circular dependency detected:
+src\app\services\endpoint-factory.service.ts -> src\app\services\auth.service.ts -> src\app\services\endpoint-factory.service.ts
+webpack: Compiled with warnings.
+ (a93cc447)
+2018-05-14T12:23:34.3421476+05:30 0HLDPCT20TUMM:00000001 [INF] Request finished in 62292.6791ms 200 text/html; charset=UTF-8 (791a596a)
+2018-05-14T12:23:34.3921504+05:30 0HLDPCT20TUMP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:62501/main.bundle.js   (ca22a1cb)
+2018-05-14T12:23:34.4361529+05:30 0HLDPCT20TUMM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:62501/inline.bundle.js   (ca22a1cb)
+2018-05-14T12:23:34.8261752+05:30 0HLDPCT20TUMQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:62501/styles.bundle.css   (ca22a1cb)
+2018-05-14T12:23:34.9691834+05:30 0HLDPCT20TUMO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:62501/vendor.bundle.js   (ca22a1cb)
+2018-05-14T12:23:35.1531940+05:30 0HLDPCT20TUMS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:62501/node_modules/ng2-toastr/bundles/ng2-toastr.js   (ca22a1cb)
+2018-05-14T12:23:35.1951964+05:30 0HLDPCT20TUMR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:62501/polyfills.bundle.js   (ca22a1cb)
+2018-05-14T12:23:35.5372159+05:30 0HLDPCT20TUMP:00000001 [INF] Request finished in 1127.367ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-05-14T12:23:36.8512911+05:30 0HLDPCT20TUMM:00000002 [INF] Request finished in 2418.3553ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-05-14T12:23:37.5623317+05:30 0HLDPCT20TUMQ:00000001 [INF] Request finished in 2717.0231ms 200 text/css; charset=UTF-8 (791a596a)
+2018-05-14T12:23:38.1753668+05:30 0HLDPCT20TUMR:00000001 [INF] Request finished in 3195.5669ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-05-14T12:23:39.9994711+05:30 0HLDPCT20TUMS:00000001 [INF] Request finished in 5019.4661ms 404 text/html; charset=utf-8 (791a596a)
+2018-05-14T12:23:41.6535658+05:30 0HLDPCT20TUMO:00000001 [INF] Request finished in 6715.8846ms 200 application/javascript; charset=UTF-8 (791a596a)
+2018-05-14T12:23:46.3978371+05:30 0HLDPCT20TUMP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:62501/sockjs-node/info?t=1526280826385   (ca22a1cb)
+2018-05-14T12:23:47.5179012+05:30 0HLDPCT20TUMP:00000002 [INF] Request finished in 1118.7143ms 200 application/json; charset=UTF-8 (791a596a)
+2018-05-14T12:23:47.6749102+05:30 0HLDPCT20TUMM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:62501/sockjs-node/932/1ywlp2ri/websocket   (ca22a1cb)
+2018-05-14T12:23:47.6809105+05:30 0HLDPCT20TUMM:00000003 [INF] Policy execution successful. (0204925d)
+2018-05-14T12:23:47.7749159+05:30 0HLDPCT20TUMM:00000003 [INF] Request finished in 99.0663ms 400  (791a596a)
+2018-05-14T12:23:47.8019174+05:30 0HLDPCT20TUMQ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:62501/sockjs-node/932/sjeeimge/xhr_streaming?t=1526280827793  0 (ca22a1cb)
+2018-05-14T12:23:47.8069177+05:30 0HLDPCT20TUMQ:00000002 [INF] Policy execution successful. (0204925d)

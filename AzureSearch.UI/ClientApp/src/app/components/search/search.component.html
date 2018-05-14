@@ -1,0 +1,46 @@
+<div class="login-container center-block" fxflexfill="" fxlayout="column" fxlayoutalign="center center" style="height: 100%; margin: 0px; min-height: 100%;
+padding-left:10px; min-width: 100%; width: 100%; flex-direction: column; box-sizing: border-box; display: flex; max-width: 100%;place-content: center; align-items: center;">
+    <form name="RegisterForm" #f="ngForm" novalidate>
+
+        <mat-card class="search">
+            <div fxLayout="row" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+                <div fxLayout="column">
+                    <mat-form-field class="searchbox">
+                        <input matInput placeholder="Search" name="Search" [formControl]="SearchFormControl" [(ngModel)]="search.text">
+                    </mat-form-field>
+                </div>
+                <div fxLayout="column">
+                    <mat-icon (click)="GetContent()">search</mat-icon>
+                </div>
+                <div fxLayout="column">
+                    <mat-icon (click)="Settings()">settings</mat-icon>
+                </div>
+            </div>
+        </mat-card>
+        <mat-tab-group>
+            <mat-tab label="Web">
+                <mat-grid-list cols="4" rowHeight="100px">
+                    <mat-grid-tile *ngFor="let d of data | paginate: { itemsPerPage: 5, currentPage: p }" >
+                        <mat-grid-tile-header>
+                            <h4> {{d.document.website}} </h4>
+                        </mat-grid-tile-header>
+                        <p>{{d.document.description}}</p>
+                        <mat-grid-tile-footer>
+                            <span mat-line> <a href="{{d.document.links}}" target="_blank">{{d.document.links}}</a></span>
+                            <mat-icon>star_border</mat-icon>
+                        </mat-grid-tile-footer>
+                    </mat-grid-tile>
+                    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </mat-grid-list>
+            </mat-tab>
+            <mat-tab label="People">
+            </mat-tab>
+            <mat-tab label="Documents">
+            </mat-tab>
+            <mat-tab label="Videos">
+            </mat-tab>
+            <mat-tab label="Settings">
+            </mat-tab>
+        </mat-tab-group>
+    </form>
+</div>

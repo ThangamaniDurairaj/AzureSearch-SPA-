@@ -1,0 +1,10 @@
+.mat-grid-list {
+    display: block;
+    position: relative;
+}
+
+.mat-grid-tile {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}

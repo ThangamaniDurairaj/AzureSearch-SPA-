@@ -1,0 +1,60 @@
+<div fxflexfill="" fxlayout="column" fxlayoutalign="center center" style="margin: 0px;
+min-height: 100%; min-width: 100%; flex-direction: column; box-sizing: border-box; padding-left:10px; display: flex; max-width: 100%; place-content: center; align-items: center;">
+    
+        <mat-tab-group>
+            <mat-tab label="Document" style="min-width: 100%;">
+                <form name="SourceForm" #f="ngForm" novalidate (ngSubmit)="AddContent()">
+                    <div fxLayout="row" fxLayoutGap="0.5%" fxLayoutAlign="left" >
+                        <mat-form-field>
+                            <input matInput placeholder="Tags" name="tags" [formControl]="tagsFormControl" [(ngModel)]="source.tags">
+                            <mat-error *ngIf="tagsFormControl.hasError('required')">
+                                Tags <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="left">
+                        <mat-form-field>
+                            <input matInput placeholder="Key Words" name="keywords" [formControl]="keywordsFormControl" [(ngModel)]="source.keywords">
+                            <mat-error *ngIf="keywordsFormControl.hasError('required')">
+                                Keywords <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="left">
+                        <mat-form-field>
+                            <input matInput placeholder="Title" name="website" [formControl]="websiteFormControl" [(ngModel)]="source.website">
+                            <mat-error *ngIf="websiteFormControl.hasError('required')">
+                                Title <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="left">
+                        <mat-form-field class="formfcol">
+                            <input matInput placeholder="Links" name="links" [formControl]="linksFormControl" [(ngModel)]="source.links">
+                            <mat-error *ngIf="linksFormControl.hasError('required')">
+                                Links <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="left">
+                        <mat-form-field>
+                            <textarea matInput placeholder="Description" name="description" rows="6" [formControl]="descriptionFormControl" [(ngModel)]="source.description">
+                            </textarea>
+                            <mat-error *ngIf="descriptionFormControl.hasError('required')">
+                                Description <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="left">
+                        <button color="primary" mat-raised-button="" class="mat-raised-button mat-primary" type="submit">
+                            <span class="mat-button-wrapper">Post</span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                    </div>
+                </form>
+            </mat-tab>
+            <mat-tab label="Files">
+            </mat-tab>
+        </mat-tab-group>
+</div>
